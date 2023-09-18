@@ -39,8 +39,10 @@ const App = () => {
         setInputValue(e.target.value);
     };
     const handleChangeView = (event: React.MouseEvent<HTMLElement>, newAlignment: EView) => {
-        setSelectedView(newAlignment);
-        localStorage.setItem('selectedView', newAlignment);
+        if (newAlignment !== null) {
+            setSelectedView(newAlignment);
+            localStorage.setItem('selectedView', newAlignment);
+        }
     };
     const addTodo = () => {
         setTodos((prev) => [{ id: Date.now(), text: inputValue, isCompleted: false }, ...prev]);
