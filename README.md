@@ -1,5 +1,4 @@
-# [Тестовое задание "To do list"](https://kdolgonosov.github.io/be-in-touch-frontend).
-## Frontend
+# [Тестовое задание "To do list"](https://to-do-with-tests.vercel.app/).
 
 To do list с тестами
 
